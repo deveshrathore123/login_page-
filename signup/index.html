@@ -32,7 +32,7 @@
         }
 
         .signup-form h2 {
-            color: #fff;
+            color: #9b59b6; /* Stylish Purple */
             margin-bottom: 30px;
             font-size: 2.5em;
         }
@@ -80,7 +80,7 @@
         }
 
         .forgot-password,
-        .login {
+        .already-have-account {
             display: block;
             margin-top: 25px;
             color: #9b59b6; /* Stylish Purple */
@@ -90,7 +90,7 @@
         }
 
         .forgot-password:hover,
-        .login:hover {
+        .already-have-account:hover {
             color: #8e44ad; /* Darker Purple on hover */
         }
     </style>
@@ -99,9 +99,12 @@
 <body>
 
     <!-- Sign Up Form Section -->
-    <div class="signup-form";
-        <h2>Create an Account on KubEdge</h2>
+    <div class="signup-form">
+        <h2>Sign Up for KubEdge</h2>
         <form action="https://deveshrathore123.github.io/mainpage_code/" method="GET">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
             <div class="form-group">
                 <input type="email" class="form-control" placeholder="Enter your email" required>
             </div>
@@ -113,7 +116,8 @@
             </div>
             <button type="submit" class="btn">Sign Up</button>
         </form>
-        <a href="https://deveshrathore123.github.io/login_page-/" class="login">Already have an account? Log In</a>
+        <a href="https://deveshrathore123.github.io/login_page-/" class="already-have-account">Already have an account? Login</a>
+        <a href="#" class="forgot-password">Forgot Password?</a>
     </div>
 
 </body>
