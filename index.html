@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KubEdge Login Page">
+    <meta name="keywords" content="KubEdge, Login">
+    <meta name="author" content="Devesh Singh Rathore">
+    <title>KubEdge Login</title>
     <style>
         body {
             font-family: 'Gloock', serif;
@@ -9,96 +14,48 @@
             padding: 0;
             background-color: #242426;
             color: #fff;
-        }
-
-        /* Header Styling */
-        header {
-            background-color: #000000;
-            color: #FFFFFF;
-            padding: 20px 40px;
+            height: 100vh;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
-        .header-title {
-            font-family: 'Gloock', serif;
-            font-size: 3em;
-            font-weight: 400;
-            letter-spacing: 0.35rem;
-            text-indent: 1.125rem;
-            line-height: 1.375;
-            color: #FFFFFF;
-            width: calc(100% + 0.35rem);
-        }
-
-        .header-tagline {
-            font-family: 'Gloock', serif;
-            font-size: 1.25em;
-            font-weight: 400;
-            letter-spacing: 0.35rem;
-            text-indent: 1.125rem;
-            line-height: 1.375;
-            color: #FFFFFF;
-            width: calc(100% + 0.35rem);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #f39c12;
-        }
-
-        /* Login Form Styling */
         .login-form {
-            max-width: 400px;
-            margin: 50px auto;
             background-color: #242426;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 40px 60px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
         }
 
         .login-form h2 {
-            text-align: center;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
         }
 
         .login-form img {
             display: block;
-            margin: 0 auto 20px;
-            max-width: 150px;
+            margin: 0 auto 30px;
+            max-width: 180px;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .form-control {
             background-color: #444;
             border: 1px solid #666;
             color: #fff;
-            padding: 10px;
+            padding: 15px;
             width: 100%;
-            border-radius: 4px;
-            transition: border-color 0.3s;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: border-color 0.3s ease;
         }
 
         .form-control:focus {
@@ -110,11 +67,12 @@
             background-color: #9b59b6; /* Stylish Purple */
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 15px;
             width: 100%;
-            border-radius: 4px;
+            border-radius: 8px;
+            font-size: 1.2em;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
@@ -124,69 +82,21 @@
         .forgot-password,
         .sign-up {
             display: block;
-            text-align: center;
-            margin-top: 15px;
+            margin-top: 25px;
             color: #9b59b6; /* Stylish Purple */
-            font-size: 14px;
+            font-size: 1em;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .forgot-password:hover,
         .sign-up:hover {
             color: #8e44ad; /* Darker Purple on hover */
         }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            padding: 30px;
-        }
-
-        footer h3 {
-            color: #fff;
-            font-size: 30px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        footer .footer-links {
-            margin: 20px 0;
-        }
-
-        footer .footer-links a {
-            margin: 0 20px;
-            color: #fff;
-            font-size: 16px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        footer .footer-links a:hover {
-            color: #f39c12;
-        }
-
-        footer .contact-info {
-            margin: 10px 0;
-            font-size: 14px;
-        }
-
-        footer .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer .contact-info a:hover {
-            color: #f39c12;
-        }
     </style>
 </head>
 
-
+<body>
 
     <!-- Login Form Section -->
     <div class="login-form">
@@ -201,9 +111,9 @@
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
-        <a href="https://deveshrathore123.github.io/login_page-/signup" class="sign-up">Sign Up</a>
+        <a href="https://deveshrathore123.github.io/login_page-/signup" class="sign-up">Don't have an account? Sign Up</a>
         <a href="#" class="forgot-password">Forgot Password?</a>
     </div>
 
-
+</body>
 </html>
