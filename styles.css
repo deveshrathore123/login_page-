@@ -19,9 +19,8 @@ body {
   overflow-y: scroll;
   min-height: 100vh;
   position: relative;
-  background-color: #1d1f23;
+  background-color: #dfe2ff;
   color: white;
-  background-image: url('images/background_image.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
